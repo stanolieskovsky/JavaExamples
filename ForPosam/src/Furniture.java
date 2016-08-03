@@ -10,7 +10,8 @@
  */
 public class Furniture {
  private int[] profile;
- 
+ private int height;
+ private int width;
     public Furniture() {
     }
 
