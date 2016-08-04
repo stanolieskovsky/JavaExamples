@@ -1,3 +1,6 @@
+
+import java.util.List;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -14,7 +17,16 @@ public class Room {
     // ak . - nula
     //ak #-1  a ak 
     //tam vlozim nabytok tak dam 2
+    private List<Furniture> FurnitureList;
     public Room() {
+    }
+
+    public List<Furniture> getFurnitureList() {
+        return FurnitureList;
+    }
+
+    public void setFurnitureList(List<Furniture> FurnitureList) {
+        this.FurnitureList = FurnitureList;
     }
     
 }
