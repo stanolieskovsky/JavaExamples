@@ -17,4 +17,6 @@ public class Program {
     */
     public void isSaved(){}
      public void start(){}
+     public void isValid(){}
+     
 }
