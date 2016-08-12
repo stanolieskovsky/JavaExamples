@@ -18,6 +18,8 @@ public class Room {
     //ak #-1  a ak 
     //tam vlozim nabytok tak dam 2
     private List<Furniture> FurnitureList;
+    private int heightR;
+     private int width;
     public Room() {
     }
 
@@ -27,6 +29,22 @@ public class Room {
 
     public void setFurnitureList(List<Furniture> FurnitureList) {
         this.FurnitureList = FurnitureList;
+    }
+
+    public int getHeightR() {
+        return heightR;
+    }
+
+    public void setHeightR(int heightR) {
+        this.heightR = heightR;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public void setWidth(int width) {
+        this.width = width;
     }
     
 }
