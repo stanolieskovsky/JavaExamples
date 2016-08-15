@@ -14,9 +14,12 @@ import java.io.File;
 public class FilesReader {
 private File fileR;
 private File fileB;
+
     public FilesReader() {
  }
+    /*method for reading list of boxes from file */
    public void readBoxes(){}
+   /*method for reading of object Room from file*/
    public void readRoom(){}
  
 }
