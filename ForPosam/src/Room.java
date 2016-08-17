@@ -20,6 +20,7 @@ public class Room {
     private List<Furniture> FurnitureList;
     private int heightR;
      private int width;
+     private int count;
     public Room() {
     }
 
@@ -45,6 +46,14 @@ public class Room {
 
     public void setWidth(int width) {
         this.width = width;
+    }
+
+    public int getCount() {
+        return count;
+    }
+
+    public void setCount(int count) {
+        this.count = count;
     }
     
 }
