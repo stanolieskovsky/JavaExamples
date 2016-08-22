@@ -23,11 +23,12 @@ public class Room {
      private int count;
     public Room() {
     }
-
+/*return list of objects type furniture*/
     public List<Furniture> getFurnitureList() {
         return FurnitureList;
     }
 
+    /*set list of objects type furniture*/
     public void setFurnitureList(List<Furniture> FurnitureList) {
         this.FurnitureList = FurnitureList;
     }
