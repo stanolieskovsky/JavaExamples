@@ -21,6 +21,7 @@ public class Room {
     private int heightR;
      private int width;
      private int count;
+     private String name;
     public Room() {
     }
 /*return list of objects type furniture*/
@@ -56,5 +57,14 @@ public class Room {
     public void setCount(int count) {
         this.count = count;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
     
 }
