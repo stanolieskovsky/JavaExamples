@@ -14,6 +14,7 @@ public class Furniture {
     private int height;
     private int width;
     private String name;
+    private int weight;
 
     public Furniture() {
     }
@@ -48,6 +49,14 @@ public class Furniture {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getWeight() {
+        return weight;
+    }
+
+    public void setWeight(int weight) {
+        this.weight = weight;
     }
     
     
