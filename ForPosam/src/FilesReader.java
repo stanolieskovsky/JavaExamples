@@ -21,7 +21,23 @@ private File fileB;
    public void readBoxes(){}
    /*method for reading of object Room from file*/
    public void readRoom(){}
- 
+
+    public File getFileR() {
+        return fileR;
+    }
+
+    public void setFileR(File fileR) {
+        this.fileR = fileR;
+    }
+
+    public File getFileB() {
+        return fileB;
+    }
+
+    public void setFileB(File fileB) {
+        this.fileB = fileB;
+    }
+
 }
     
 
