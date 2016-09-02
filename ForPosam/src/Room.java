@@ -22,6 +22,7 @@ public class Room {
      private int width;
      private int count;
      private String name;
+     private int number;
     public Room() {
     }
 /*return list of objects type furniture*/
@@ -64,6 +65,14 @@ public class Room {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
     
     
