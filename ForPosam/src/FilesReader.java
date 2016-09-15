@@ -15,6 +15,9 @@ public class FilesReader {
 private File fileR;
 private File fileB;
 
+/*
+clas for reading file
+*/
     public FilesReader() {
  }
     /*method for reading list of boxes from file */
