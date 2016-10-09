@@ -17,6 +17,7 @@ public class Furniture {
     private int width;
     private String name;
     private int weight;
+    private int square;
     
 
     public Furniture() {
@@ -98,6 +99,14 @@ public class Furniture {
 
     public void setIsIncluded(boolean isIncluded) {
         this.isIncluded = isIncluded;
+    }
+
+    public int getSquare() {
+        return square;
+    }
+
+    public void setSquare(int square) {
+        this.square = square;
     }
     
     
