@@ -14,6 +14,7 @@ public class Floor {
     }
    private int count; 
    private String name;
+   private int sizeM;
 
     public String getName() {
         return name;
@@ -31,5 +32,14 @@ public class Floor {
     public void setCount(int count) {
         this.count = count;
     }
+
+    public int getSizeM() {
+        return sizeM;
+    }
+
+    public void setSizeM(int sizeM) {
+        this.sizeM = sizeM;
+    }
+    
    
 }
