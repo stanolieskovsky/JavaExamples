@@ -9,7 +9,11 @@
  * @author liesko3
  */
 public class Program {
+ private Floor flor;
 
+    public Program(Floor flor) {
+        this.flor = flor;
+    }
     public Program() {
     }
     /*
