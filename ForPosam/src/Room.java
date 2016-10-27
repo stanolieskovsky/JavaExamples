@@ -1,5 +1,7 @@
 
+import com.sun.org.apache.xpath.internal.functions.Function;
 import java.util.List;
+import java.util.ListIterator;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -73,6 +75,10 @@ public class Room {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public ListIterator<Furniture> listIterator() {
+        return FurnitureList.listIterator();
     }
     
     
