@@ -80,6 +80,13 @@ public class Room {
     public ListIterator<Furniture> listIterator() {
         return FurnitureList.listIterator();
     }
+
+    public Room(List<Furniture> FurnitureList, int heightR, int width, int count) {
+        this.FurnitureList = FurnitureList;
+        this.heightR = heightR;
+        this.width = width;
+        this.count = count;
+    }
     
     
 }
