@@ -1,4 +1,6 @@
 
+import java.beans.PropertyChangeListener;
+import java.beans.PropertyChangeSupport;
 import java.io.File;
 
 /*
@@ -39,6 +41,72 @@ clas for reading file
 
     public void setFileB(File fileB) {
         this.fileB = fileB;
+    }
+
+    String[] string;
+
+    public static final String PROP_STRING = "string";
+
+    /**
+     * Get the value of string
+     *
+     * @return the value of string
+     */
+    public String[] getString() {
+        return string;
+    }
+
+    /**
+     * Set the value of string
+     *
+     * @param string new value of string
+     */
+    public void setString(String[] string) {
+        String[] oldString = this.string;
+        this.string = string;
+        propertyChangeSupport.firePropertyChange(PROP_STRING, oldString, string);
+    }
+
+    /**
+     * Get the value of string at specified index
+     *
+     * @param index the index of string
+     * @return the value of string at specified index
+     */
+    public String getString(int index) {
+        return this.string[index];
+    }
+
+    /**
+     * Set the value of string at specified index.
+     *
+     * @param index the index of string
+     * @param string new value of string at specified index
+     */
+    public void setString(int index, String string) {
+        String oldString = this.string[index];
+        this.string[index] = string;
+        propertyChangeSupport.fireIndexedPropertyChange(PROP_STRING, index, oldString, string);
+    }
+
+    private transient final PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);
+
+    /**
+     * Add PropertyChangeListener.
+     *
+     * @param listener
+     */
+    public void addPropertyChangeListener(PropertyChangeListener listener) {
+        propertyChangeSupport.addPropertyChangeListener(listener);
+    }
+
+    /**
+     * Remove PropertyChangeListener.
+     *
+     * @param listener
+     */
+    public void removePropertyChangeListener(PropertyChangeListener listener) {
+        propertyChangeSupport.removePropertyChangeListener(listener);
     }
 
 }
