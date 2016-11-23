@@ -9,5 +9,8 @@
  * @author liesko3
  */
 public class ReadXSLT {
+
+    public ReadXSLT() {
+    }
     
 }
